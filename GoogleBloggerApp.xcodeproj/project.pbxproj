@@ -15,9 +15,11 @@
 		214260FC245E58F0008FCA4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214260FA245E58F0008FCA4D /* Main.storyboard */; };
 		214260FE245E58F2008FCA4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214260FD245E58F2008FCA4D /* Assets.xcassets */; };
 		21426101245E58F2008FCA4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214260FF245E58F2008FCA4D /* LaunchScreen.storyboard */; };
+		6B6B753FFF2CE2423A7AD10F /* Pods_GoogleBloggerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C8B4EBB8C55EE05A0A5C4C /* Pods_GoogleBloggerApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03C35830FB64D45EC40EE826 /* Pods-GoogleBloggerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleBloggerApp.debug.xcconfig"; path = "Target Support Files/Pods-GoogleBloggerApp/Pods-GoogleBloggerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		214260EC245E58F0008FCA4D /* GoogleBloggerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleBloggerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		214260EF245E58F0008FCA4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		214260F2245E58F0008FCA4D /* GoogleBloggerApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoogleBloggerApp.xcdatamodel; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		214260FD245E58F2008FCA4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21426100245E58F2008FCA4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21426102245E58F2008FCA4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F282E18B972809C2D83DD4 /* Pods-GoogleBloggerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleBloggerApp.release.xcconfig"; path = "Target Support Files/Pods-GoogleBloggerApp/Pods-GoogleBloggerApp.release.xcconfig"; sourceTree = "<group>"; };
+		E0C8B4EBB8C55EE05A0A5C4C /* Pods_GoogleBloggerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleBloggerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6B753FFF2CE2423A7AD10F /* Pods_GoogleBloggerApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				214260EE245E58F0008FCA4D /* GoogleBloggerApp */,
 				214260ED245E58F0008FCA4D /* Products */,
+				F6A0F690E1C51ADE2E73C06B /* Pods */,
+				3D587311BAAE7762A56AECD4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,24 @@
 			path = GoogleBloggerApp;
 			sourceTree = "<group>";
 		};
+		3D587311BAAE7762A56AECD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0C8B4EBB8C55EE05A0A5C4C /* Pods_GoogleBloggerApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6A0F690E1C51ADE2E73C06B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03C35830FB64D45EC40EE826 /* Pods-GoogleBloggerApp.debug.xcconfig */,
+				72F282E18B972809C2D83DD4 /* Pods-GoogleBloggerApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21426105245E58F2008FCA4D /* Build configuration list for PBXNativeTarget "GoogleBloggerApp" */;
 			buildPhases = (
+				3C99F319EA33BE3BF645E907 /* [CP] Check Pods Manifest.lock */,
 				214260E8245E58F0008FCA4D /* Sources */,
 				214260E9245E58F0008FCA4D /* Frameworks */,
 				214260EA245E58F0008FCA4D /* Resources */,
+				4F3C35198D5C3ADEEA9A6CC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C99F319EA33BE3BF645E907 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleBloggerApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F3C35198D5C3ADEEA9A6CC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleBloggerApp/Pods-GoogleBloggerApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleBloggerApp/Pods-GoogleBloggerApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleBloggerApp/Pods-GoogleBloggerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		214260E8245E58F0008FCA4D /* Sources */ = {
@@ -290,6 +359,7 @@
 		};
 		21426106245E58F2008FCA4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03C35830FB64D45EC40EE826 /* Pods-GoogleBloggerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +378,7 @@
 		};
 		21426107245E58F2008FCA4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F282E18B972809C2D83DD4 /* Pods-GoogleBloggerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
